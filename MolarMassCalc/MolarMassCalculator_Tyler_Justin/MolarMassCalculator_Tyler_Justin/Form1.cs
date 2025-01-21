@@ -155,8 +155,11 @@ namespace MolarMassCalculator_Tyler_Justin
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName;
+
             // Define the file path for the input data
-            string filePath = @"C:\Users\Justin\source\repos\MMC_1241_Tyler_Justin\message-2.txt";
+            string filePath = projectDirectory + "\\message-2.txt";
+
 
             try
             {
